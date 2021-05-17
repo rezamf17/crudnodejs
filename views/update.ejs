@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <h1>Create Data</h1>
+           <div class="card">
+               <form action="/update/<%= User.id %> " method="POST">
+                   <div class="mb-8">
+                       <label for="exampleFormControlInput1" class="form-label">Username</label>
+                       <input type="text" class="form-control" name="username" placeholder="username" value="<%= User.username %>" >
+                       <label for="exampleFormControlInput1" class="form-label">Email</label>
+                       <input type="text" class="form-control" name="email" placeholder="email" value="<%= User.email %>">
+                       <label for="exampleFormControlInput1" class="form-label">Password</label>
+                       <input type="text" class="form-control" name="password" placeholder="password" value="<%= User.password %>">
+                     </div>
+                     <button class="btn btn-primary">Update</button>
+               </form>
+           </div>
+        </div>
+    </div>
+</div>
